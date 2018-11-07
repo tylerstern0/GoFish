@@ -62,20 +62,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GoFIS">
+  <component name="RunManager" selected="Application.GoFish">
     <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" CONFIG_NAME="Debug" EXPLICIT_BUILD_TARGET_NAME="all">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GoFIS" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="GoFIS" TARGET_NAME="GoFIS" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="GoFIS" RUN_TARGET_NAME="GoFIS">
+    <configuration name="GoFish" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="GoFish" TARGET_NAME="GoFish" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="GoFish" RUN_TARGET_NAME="GoFish">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.Build All" />
-      <item itemvalue="Application.GoFIS" />
+      <item itemvalue="Application.GoFish" />
     </list>
   </component>
   <component name="SvnConfiguration">
