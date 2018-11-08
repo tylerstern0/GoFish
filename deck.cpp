@@ -92,7 +92,7 @@ Card Deck::dealCard() {
 }
 
 int Deck::size() const{
-    return(Cards.size());   //what is "Cards"? where is it defined
+    return myIndex;
 
 }
 
