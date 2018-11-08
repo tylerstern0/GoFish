@@ -91,7 +91,13 @@
 		<Unit filename="/Users/aditya/Desktop/GoFish/card_demo.cpp">
 			<Option target="GoFish"/>
 		</Unit>
+		<Unit filename="/Users/aditya/Desktop/GoFish/deck.cpp">
+			<Option target="GoFish"/>
+		</Unit>
 		<Unit filename="/Users/aditya/Desktop/GoFish/deck.h">
+			<Option target="GoFish"/>
+		</Unit>
+		<Unit filename="/Users/aditya/Desktop/GoFish/player.cpp">
 			<Option target="GoFish"/>
 		</Unit>
 		<Unit filename="/Users/aditya/Desktop/GoFish/player.h">

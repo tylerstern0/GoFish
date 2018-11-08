@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/GoFish.dir/card_demo.cpp.o"
   "CMakeFiles/GoFish.dir/card.cpp.o"
+  "CMakeFiles/GoFish.dir/deck.cpp.o"
+  "CMakeFiles/GoFish.dir/player.cpp.o"
   "GoFish.pdb"
   "GoFish"
 )

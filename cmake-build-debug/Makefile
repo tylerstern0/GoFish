@@ -177,6 +177,60 @@ card_demo.cpp.s:
 	$(MAKE) -f CMakeFiles/GoFish.dir/build.make CMakeFiles/GoFish.dir/card_demo.cpp.s
 .PHONY : card_demo.cpp.s
 
+deck.o: deck.cpp.o
+
+.PHONY : deck.o
+
+# target to build an object file
+deck.cpp.o:
+	$(MAKE) -f CMakeFiles/GoFish.dir/build.make CMakeFiles/GoFish.dir/deck.cpp.o
+.PHONY : deck.cpp.o
+
+deck.i: deck.cpp.i
+
+.PHONY : deck.i
+
+# target to preprocess a source file
+deck.cpp.i:
+	$(MAKE) -f CMakeFiles/GoFish.dir/build.make CMakeFiles/GoFish.dir/deck.cpp.i
+.PHONY : deck.cpp.i
+
+deck.s: deck.cpp.s
+
+.PHONY : deck.s
+
+# target to generate assembly for a file
+deck.cpp.s:
+	$(MAKE) -f CMakeFiles/GoFish.dir/build.make CMakeFiles/GoFish.dir/deck.cpp.s
+.PHONY : deck.cpp.s
+
+player.o: player.cpp.o
+
+.PHONY : player.o
+
+# target to build an object file
+player.cpp.o:
+	$(MAKE) -f CMakeFiles/GoFish.dir/build.make CMakeFiles/GoFish.dir/player.cpp.o
+.PHONY : player.cpp.o
+
+player.i: player.cpp.i
+
+.PHONY : player.i
+
+# target to preprocess a source file
+player.cpp.i:
+	$(MAKE) -f CMakeFiles/GoFish.dir/build.make CMakeFiles/GoFish.dir/player.cpp.i
+.PHONY : player.cpp.i
+
+player.s: player.cpp.s
+
+.PHONY : player.s
+
+# target to generate assembly for a file
+player.cpp.s:
+	$(MAKE) -f CMakeFiles/GoFish.dir/build.make CMakeFiles/GoFish.dir/player.cpp.s
+.PHONY : player.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -192,6 +246,12 @@ help:
 	@echo "... card_demo.o"
 	@echo "... card_demo.i"
 	@echo "... card_demo.s"
+	@echo "... deck.o"
+	@echo "... deck.i"
+	@echo "... deck.s"
+	@echo "... player.o"
+	@echo "... player.i"
+	@echo "... player.s"
 .PHONY : help
 
 
