@@ -82,10 +82,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/aditya/Desktop/GoFish/card.cpp">
+			<Option target="GoFish"/>
+		</Unit>
 		<Unit filename="/Users/aditya/Desktop/GoFish/card.h">
 			<Option target="GoFish"/>
 		</Unit>
-		<Unit filename="/Users/aditya/Desktop/GoFish/card_demo.cp">
+		<Unit filename="/Users/aditya/Desktop/GoFish/card_demo.cpp">
 			<Option target="GoFish"/>
 		</Unit>
 		<Unit filename="/Users/aditya/Desktop/GoFish/deck.h">

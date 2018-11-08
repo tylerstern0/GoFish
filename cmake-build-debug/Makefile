@@ -123,6 +123,60 @@ GoFish/fast:
 	$(MAKE) -f CMakeFiles/GoFish.dir/build.make CMakeFiles/GoFish.dir/build
 .PHONY : GoFish/fast
 
+card.o: card.cpp.o
+
+.PHONY : card.o
+
+# target to build an object file
+card.cpp.o:
+	$(MAKE) -f CMakeFiles/GoFish.dir/build.make CMakeFiles/GoFish.dir/card.cpp.o
+.PHONY : card.cpp.o
+
+card.i: card.cpp.i
+
+.PHONY : card.i
+
+# target to preprocess a source file
+card.cpp.i:
+	$(MAKE) -f CMakeFiles/GoFish.dir/build.make CMakeFiles/GoFish.dir/card.cpp.i
+.PHONY : card.cpp.i
+
+card.s: card.cpp.s
+
+.PHONY : card.s
+
+# target to generate assembly for a file
+card.cpp.s:
+	$(MAKE) -f CMakeFiles/GoFish.dir/build.make CMakeFiles/GoFish.dir/card.cpp.s
+.PHONY : card.cpp.s
+
+card_demo.o: card_demo.cpp.o
+
+.PHONY : card_demo.o
+
+# target to build an object file
+card_demo.cpp.o:
+	$(MAKE) -f CMakeFiles/GoFish.dir/build.make CMakeFiles/GoFish.dir/card_demo.cpp.o
+.PHONY : card_demo.cpp.o
+
+card_demo.i: card_demo.cpp.i
+
+.PHONY : card_demo.i
+
+# target to preprocess a source file
+card_demo.cpp.i:
+	$(MAKE) -f CMakeFiles/GoFish.dir/build.make CMakeFiles/GoFish.dir/card_demo.cpp.i
+.PHONY : card_demo.cpp.i
+
+card_demo.s: card_demo.cpp.s
+
+.PHONY : card_demo.s
+
+# target to generate assembly for a file
+card_demo.cpp.s:
+	$(MAKE) -f CMakeFiles/GoFish.dir/build.make CMakeFiles/GoFish.dir/card_demo.cpp.s
+.PHONY : card_demo.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -132,6 +186,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... GoFish"
+	@echo "... card.o"
+	@echo "... card.i"
+	@echo "... card.s"
+	@echo "... card_demo.o"
+	@echo "... card_demo.i"
+	@echo "... card_demo.s"
 .PHONY : help
 
 

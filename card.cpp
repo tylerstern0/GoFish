@@ -10,7 +10,6 @@
 
 
 
-//4 different constructors; we'll likely only ever use the last one
 Card::Card()
 {
     myRank = 1;
@@ -26,14 +25,16 @@ Card::Card(int _rank, Suit _s)
 
 
 //get and set instance variables (name, artist, size)
-string Card::toString() {
-    std::string rank = std::to_string(myRank);
+string Card::toString() const{
+    return(rankString(myRank) + suitString(mySuit));
+}
+
+
+/*
+     std::string rank = std::to_string(myRank);
     std::string suit = std::to_string(mySuit);
     std:string strSR = suit[0] + rank;
     return (strSR);
-}
-
-/*
     switch(mySuit)
     {
         case spades: std:cout<<"s"<<rank<endl;
@@ -49,18 +50,64 @@ string Card::toString() {
  */
 
 
-bool sameSuitAs(const Card& c) const{
-    return true;
-}
-
-
-int  getRank() const{
-    return(rank);
+bool Card::sameSuitAs(const Card& c) const{
+    return(mySuit == c.mySuit);
 
 }
 
-string suitString(Suit s) const{
-    std::string suit = std::to_string(mySuit);
-    return (suit[0]);
+
+int  Card::getRank() const{
+    return(myRank);
+
+}
+
+string Card::suitString(Suit s) const{
+    switch(s)
+    {
+        case spades: return("s");
+        case diamonds: return("d");
+        case hearts: return("h");
+        case clubs: return("c");
+
+    }
+    return ("NULL");
+}
+
+string Card::rankString(int r) const{
+    if(r != 1 and r != 11 and r!= 12 and r != 13)
+    {
+        return(std::to_string(myRank));
+    }
+    if(r == 1)
+    {
+        return("A");
+    }
+    if(r == 11)
+    {
+        return("J");
+    }
+    if(r == 12)
+    {
+        return("Q");
+    }
+    else if(r == 13)
+    {
+        return("K");
+    }
+
+}
+
+// operators
+
+bool Card::operator == (const Card& rhs) const{
+    bool result = (mySuit == rhs.mySuit &&
+                   myRank == rhs.myRank);
+    return result;
+}
+
+bool Card::operator != (const Card& rhs) const{
+    bool result = (mySuit != rhs.mySuit ||
+                   myRank != rhs.myRank);
+    return result;
 }
 
