@@ -20,6 +20,7 @@ Deck::Deck(){
             i++;
         }
     }
+    int myIndex = 51;
 //Vector Implementation??
 
     std::vector <Card> Cards{};
@@ -44,6 +45,26 @@ void Deck::shuffle() {
         std::cout << '\n';
     }
 
+}
+
+Card Deck::dealCard() {
+    Card tempCard;
+    tempCard = Cards.back();
+    Cards.pop_back();
+    return(tempCard);
+
+    //Array Implementation
+    Card tempCard;
+    tempCard = myCards[myIndex];
+    myIndex--;
+    //?? Not sure how to delete - I think we will have to use a pointer, maybe a vector of pointers
 
 }
+
+int Deck::size() const{
+    return(Cards.size());
+
+}
+
+
 
