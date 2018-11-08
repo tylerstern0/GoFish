@@ -49,20 +49,16 @@ void Deck::shuffle() {
 
 Card Deck::dealCard() {
     Card tempCard;
-    tempCard = Cards.back();
-    Cards.pop_back();
-    return(tempCard);
-
-    //Array Implementation
-    Card tempCard;
     tempCard = myCards[myIndex];
+    myCards[myIndex] = NULL;
     myIndex--;
+    return tempCard;
     //?? Not sure how to delete - I think we will have to use a pointer, maybe a vector of pointers
 
 }
 
 int Deck::size() const{
-    return(Cards.size());
+    return(Cards.size());   //what is "Cards"? where is it defined
 
 }
 
