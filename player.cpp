@@ -82,8 +82,11 @@ bool Player::rankInHand(Card c) const {
 
 Card Player::chooseCardFromHand() const {
     srand((unsigned)time(0));  //seed the random number generator
-    int i = (rand() % myHand.size());
-    return(myHand[i]);
+
+    if(myHand.size() > 0) {
+        int i = (rand() % myHand.size());
+        return (myHand[i]);
+    }
 }
 
 bool Player::cardInHand(Card c) const {
