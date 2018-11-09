@@ -53,8 +53,8 @@ bool Player::checkHandForBook(Card &c1, Card &c2) {
 
     for(int i = 0; i<myHand.size(); i++){
         for(int j = 0; j<myHand.size(); j++)
-            //while(myHand[i].getRank() != myHand[j].getRank())   //I don't know why you used this while loop here
-            //{
+            while(myHand[i].getRank() != myHand[j].getRank())   //I don't know why you used this while loop here
+            {
                 if(myHand[i] == myHand[j]){
                     c1 = myHand[i];
                     c2 = myHand[j];
