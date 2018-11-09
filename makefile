@@ -26,8 +26,8 @@ card.o: card.cpp
 deck.o: deck.cpp
 	$(CPP) -c deck.cpp -o deck.o $(CXXFLAGS)
 
-go_fish.o: go_fish.cpp
-	$(CPP) -c go_fish.cpp -o go_fish.o $(CXXFLAGS)
+go_fish.o: card_demo.cpp
+	$(CPP) -c card_demo.cpp -o go_fish.o $(CXXFLAGS)
 
 player.o: player.cpp
 	$(CPP) -c player.cpp -o player.o $(CXXFLAGS)
