@@ -14,16 +14,16 @@ Deck::Deck() {
     //Card myCards[SIZE];
 
     for (int r = 0; r < 13; r++) {
-        myCards[r] = Card(r, (Card::Suit) 0);
+        myCards[r] = Card(r+1, (Card::Suit) 0);
     }
     for (int r = 0; r < 13; r++) {
-        myCards[r+13] = Card(r, (Card::Suit) 1);
+        myCards[r+13] = Card(r+1, (Card::Suit) 1);
     }
     for (int r = 0; r < 13; r++) {
-        myCards[r+25] = Card(r, (Card::Suit) 2);
+        myCards[r+25] = Card(r+1, (Card::Suit) 2);
     }
-    for (int r = 0; r < 14; r++) {
-        myCards[r+38] = Card(r, (Card::Suit) 3);
+    for (int r = 0; r < 13; r++) {
+        myCards[r+38] = Card(r+1, (Card::Suit) 3);
     }
 
     myIndex = 51;

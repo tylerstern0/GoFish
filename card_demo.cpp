@@ -38,22 +38,13 @@ int main( )
     cout << p2.getName() <<" has : " << p2.showHand() << endl;
 
 
-    while ((p1.getBookSize() + p2.getBookSize()) < 26){
-        char a;
-        cout<<"Turn?"<<endl;
-        cin >> a;
-        if(a == 'y') {
-            turn(p1, p2, d);
-            cout << p1.getName() << "'s hand: " << p1.showHand() << endl;
-            cout << p2.getName() << "'s hand: " << p2.showHand() << endl;
-            cout << p1.getName() << "'s books: " << p1.showBooks() << endl;
-            cout << p2.getName() << "'s books: " << p2.showBooks() << endl;
-        }
-        cout<<"Turn?"<<endl;
-        cin >> a;
-        if(a == 'y') {
-            turn(p2, p1, d);
-            }
+    while ((p1.getBookSize() + p2.getBookSize()) < 25){
+        turn(p1, p2, d);
+        cout << p1.getName() << "'s hand: " << p1.showHand() << endl;
+        cout << p2.getName() << "'s hand: " << p2.showHand() << endl;
+        cout << p1.getName() << "'s books: " << p1.showBooks() << endl;
+        cout << p2.getName() << "'s books: " << p2.showBooks() << endl;
+        turn(p2, p1, d);
 
     }
 

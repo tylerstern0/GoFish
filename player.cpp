@@ -67,16 +67,13 @@ bool Player::checkHandForBook(Card &c1, Card &c2) {
             if(myHand[i].getSuit() != myHand[j].getSuit())
             {
                 if(myHand[i] == myHand[j]){
-                    cout<<"entered if"<<endl;
                     c1 = myHand[i];
                     c2 = myHand[j];
                     bookCards(c1, c2);
-                    cout<<"booked cards"<<endl;
 
                     removeCardFromHand(c1);
 
                     removeCardFromHand(c2);
-                    cout<<c1.toString()<<c2.toString()<<endl;
 
 
                     return(true);
