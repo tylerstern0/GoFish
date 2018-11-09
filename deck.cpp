@@ -12,11 +12,20 @@
 
 Deck::Deck() {
     Card myCards[SIZE];
-    int i = 0;
-    for (int r = 0; r < 12; r++) {
+
+    for (int r = 1; r < 13; r++) {
         myCards[r] = Card(r, (Card::Suit) 0);
     }
-    for (int r = 12; r < 25; r++) {
+    for (int r = 1; r < 13; r++) {
+        myCards[r] = Card(r, (Card::Suit) 1);
+    }
+    for (int r = 1; r < 13; r++) {
+        myCards[r] = Card(r, (Card::Suit) 2);
+    }
+    for (int r = 1; r < 13; r++) {
+        myCards[r] = Card(r, (Card::Suit) 3);
+    }
+/*    for (int r = 12; r < 25; r++) {
         myCards[r] = Card(r, (Card::Suit) 1);
     }
     for (int r = 25; r < 38; r++) {
@@ -24,9 +33,9 @@ Deck::Deck() {
     }
     for (int r = 38; r < 52; r++) {
         myCards[r] = Card(r, (Card::Suit) 3);
-    }
+    }*/
 
-    int myIndex = 51;
+    myIndex = 51;
 }
 
 
@@ -85,7 +94,6 @@ Card Deck::dealCard() {
         tempCard = myCards[myIndex];
         myIndex--;
         return tempCard;
-        //?? Not sure how to delete - I think we will have to use a pointer, maybe a vector of pointers
 
     }
     else{

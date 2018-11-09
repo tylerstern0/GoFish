@@ -48,8 +48,7 @@ class Card
     
     bool operator == (const Card& rhs) const;
     bool operator != (const Card& rhs) const;
-    
-
+    ostream& operator << (const Card& c);
     
   private:
 
@@ -59,7 +58,7 @@ class Card
     
 };
 
-ostream& operator << (ostream& out, const Card& c);
+
 
 
 

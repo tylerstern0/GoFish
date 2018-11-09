@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/aditya/Desktop/GoFish/card.cpp" "/Users/aditya/Desktop/GoFish/cmake-build-debug/CMakeFiles/GoFish.dir/card.cpp.o"
-  "/Users/aditya/Desktop/GoFish/card_demo.cpp" "/Users/aditya/Desktop/GoFish/cmake-build-debug/CMakeFiles/GoFish.dir/card_demo.cpp.o"
-  "/Users/aditya/Desktop/GoFish/deck.cpp" "/Users/aditya/Desktop/GoFish/cmake-build-debug/CMakeFiles/GoFish.dir/deck.cpp.o"
-  "/Users/aditya/Desktop/GoFish/player.cpp" "/Users/aditya/Desktop/GoFish/cmake-build-debug/CMakeFiles/GoFish.dir/player.cpp.o"
+  "/Users/tylerstern/CLionProjects/GoFish/card.cpp" "/Users/tylerstern/CLionProjects/GoFish/cmake-build-debug/CMakeFiles/GoFish.dir/card.cpp.o"
+  "/Users/tylerstern/CLionProjects/GoFish/card_demo.cpp" "/Users/tylerstern/CLionProjects/GoFish/cmake-build-debug/CMakeFiles/GoFish.dir/card_demo.cpp.o"
+  "/Users/tylerstern/CLionProjects/GoFish/deck.cpp" "/Users/tylerstern/CLionProjects/GoFish/cmake-build-debug/CMakeFiles/GoFish.dir/deck.cpp.o"
+  "/Users/tylerstern/CLionProjects/GoFish/player.cpp" "/Users/tylerstern/CLionProjects/GoFish/cmake-build-debug/CMakeFiles/GoFish.dir/player.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

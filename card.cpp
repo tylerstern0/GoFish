@@ -1,10 +1,4 @@
-//
-// Created by Aditya Singh on 11/7/18.
-//
 
-//
-// Created by Tyler Stern on 10/28/18.
-//
 
 #include "card.h"
 
@@ -24,7 +18,7 @@ Card::Card(int _rank, Suit _s)
 
 
 
-//get and set instance variables (name, artist, size)
+//member functions
 string Card::toString() const{
     return(rankString(myRank) + suitString(mySuit));
 }
@@ -109,3 +103,6 @@ bool Card::operator != (const Card& rhs) const{
     return result;
 }
 
+ostream& Card::operator << (const Card& c){
+    cout << c.toString();
+}
