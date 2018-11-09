@@ -57,7 +57,7 @@ class Player
     int getHandSize() const; 
     int getBookSize() const; 
        
-    //OPTIONAL
+    //OPTIONAL: CHECK HAND FOR BOOK AND RANK IN HAND SATISFY THESE
     // comment out if you decide to not use it
     //this function will check a players hand for a pair. 
     //If a pair is found, it returns true and populates the two variables with the cards tha make the pair.

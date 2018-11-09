@@ -113,5 +113,20 @@ Card Player::removeCardFromHand(Card c) {
 
 }
 
+int Player::getBookSize() const {
+    return(myBook.size());
+
+}
+
+int Player::getHandSize() const {
+    return(myHand.size());
+}
+
+string Player::showHand() const {
+    return("Help");
+}
+string Player::showBooks() const {
+    return("Help");
+}
 
 
