@@ -100,12 +100,13 @@ char Card::getSuit() const {
 // operators
 
 bool Card::operator == (const Card& rhs) const{
-    bool result = (myRank == rhs.myRank);
+    bool result = (getRank() == rhs.getRank());
+    cout<<getRank()<<" "<<rhs.getRank()<<endl;
     return result;
 }
 
 bool Card::operator != (const Card& rhs) const{
-    bool result = (myRank != rhs.myRank);
+    bool result = (getRank() != rhs.getRank());
     return result;
 }
 

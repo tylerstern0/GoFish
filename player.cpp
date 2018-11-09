@@ -55,14 +55,8 @@ Card Player::removeCardFromHand(Card c) {
 }
 
 void Player::bookCards(Card c1, Card c2) {
-    if(myBook.size()<26){
-        myBook.push_back(c1);
-        myBook.push_back(c2);
-    }
-
-    else{
-        cout<<"Book is Full";
-    }
+    myBook.push_back(c1);
+    myBook.push_back(c2);
 
 }
 
@@ -70,13 +64,21 @@ bool Player::checkHandForBook(Card &c1, Card &c2) {
 
     for(int i = 0; i<myHand.size(); i++){
         for(int j = 0; j<myHand.size(); j++)
-            while(myHand[i].getSuit() != myHand[j].getSuit())
+            if(myHand[i].getSuit() != myHand[j].getSuit())
             {
                 if(myHand[i] == myHand[j]){
+                    cout<<"entered if"<<endl;
                     c1 = myHand[i];
-                    removeCardFromHand(c1);
                     c2 = myHand[j];
+                    bookCards(c1, c2);
+                    cout<<"booked cards"<<endl;
+
+                    removeCardFromHand(c1);
+
                     removeCardFromHand(c2);
+                    cout<<c1.toString()<<c2.toString()<<endl;
+
+
                     return(true);
                 }
 

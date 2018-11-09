@@ -5,13 +5,14 @@
 #include "card.h"
 #include "player.h"
 #include "deck.h"
+#include <unistd.h>
 
 using namespace std;
 
 
 // PROTOTYPES for functions used by this demonstration program:
 void dealHand(Deck &d, Player &p, int numCards);
-void turn(Player pA, Player pB, Deck d);
+void turn(Player &pA, Player &pB, Deck &d);
 
 
 
@@ -26,7 +27,7 @@ int main( )
 
     Deck d;  //create a deck of cards
 
-    //d.shuffle();
+    d.shuffle();
 
 
     dealHand(d, p1, numCards);
@@ -36,13 +37,23 @@ int main( )
     cout << p1.getName() <<" has : " << p1.showHand() << endl;
     cout << p2.getName() <<" has : " << p2.showHand() << endl;
 
+
     while ((p1.getBookSize() + p2.getBookSize()) < 26){
-        turn(p1, p2, d);
-        cout << p1.getName() << "'s hand: " << p1.showHand() << endl;
-        cout << p2.getName() << "'s hand: " << p2.showHand() << endl;
-        cout << p1.getName() << "'s books: " << p1.showBooks() << endl;
-        cout << p2.getName() << "'s books: " << p2.showBooks() << endl;
-        turn(p2, p1, d);
+        char a;
+        cout<<"Turn?"<<endl;
+        cin >> a;
+        if(a == 'y') {
+            turn(p1, p2, d);
+            cout << p1.getName() << "'s hand: " << p1.showHand() << endl;
+            cout << p2.getName() << "'s hand: " << p2.showHand() << endl;
+            cout << p1.getName() << "'s books: " << p1.showBooks() << endl;
+            cout << p2.getName() << "'s books: " << p2.showBooks() << endl;
+        }
+        cout<<"Turn?"<<endl;
+        cin >> a;
+        if(a == 'y') {
+            turn(p2, p1, d);
+            }
 
     }
 
@@ -59,7 +70,7 @@ void dealHand(Deck &d, Player &p, int numCards)
       p.addCard(d.dealCard());
 }
 
-void turn(Player pA, Player pB, Deck d){
+void turn(Player &pA, Player &pB, Deck &d){
     if(!pA.handEmpty()){
 
         //ask the other player for a rank of card
@@ -78,18 +89,26 @@ void turn(Player pA, Player pB, Deck d){
         }else{
             cout << pB.getName() << ": Nah, bro, sorry, bro. Go Fish." << endl;
             newCard = d.dealCard();
+            cout<<newCard.toString()<<endl;
         }
 
         //add the newCard to the player's hand and check/make books, then return
         pA.addCard(newCard);
 
+
+
         Card booked1;
         Card booked2;
+
         int book = pA.checkHandForBook(booked1, booked2);
-        if(book){
-            pA.bookCards(booked1, booked2);
-        }
-        cout << pA.getName() << " has booked " << booked1.toString()<< " and " << booked2.toString() << "." << endl;
+
+        //if(book){
+
+            //pA.bookCards(booked1, booked2);
+
+        //}
+
+        //cout << pA.getName() << " has booked " << booked1.toString()<< " and " << booked2.toString() << "." << endl;
         return;
 
 
@@ -103,12 +122,13 @@ void turn(Player pA, Player pB, Deck d){
         Card booked1;
         Card booked2;
         int book = pA.checkHandForBook(booked1, booked2);
-        if(book){
-            pA.bookCards(booked1, booked2);
-        }
-        cout << pA.getName() << " has booked " << booked1.toString()<< " and " << booked2.toString() << "." << endl;
+        //if(book){
+          //  pA.bookCards(booked1, booked2);
+        //}
+        //cout << pA.getName() << " has booked " << booked1.toString()<< " and " << booked2.toString() << "." << endl;
         return;
     }
+
 
 }
 
