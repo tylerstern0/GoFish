@@ -114,7 +114,7 @@ Card Player::removeCardFromHand(Card c) {
 }
 
 int Player::getBookSize() const {
-    return(myBook.size());
+    return((myBook.size())/2);
 
 }
 

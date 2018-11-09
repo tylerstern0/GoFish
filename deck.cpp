@@ -47,7 +47,7 @@ void Deck::shuffle() {
     int swapIndex = 0;
     int tempIndex = myIndex; // this effectively hides the cards that are dealt
 
-    while(tempIndex >= 0) {
+    while(tempIndex > 0) {
         swapIndex = (rand() % tempIndex);
         tempCard = myCards[swapIndex];
         myCards[swapIndex] = myCards[tempIndex];
