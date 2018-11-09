@@ -11,6 +11,7 @@ using namespace std;
 
 // PROTOTYPES for functions used by this demonstration program:
 void dealHand(Deck &d, Player &p, int numCards);
+void turn(Player pA, Player pB, Deck d);
 
 
 
@@ -19,12 +20,11 @@ int main( )
 {
     int numCards = 5;
 
-    Player p1("Joe");
-    Player p2("Jane");
+    Player p1("Tyler");
+    Player p2("Aditya");
 
 
     Deck d;  //create a deck of cards
-    d = Deck();
 
     //d.shuffle();
 
@@ -36,6 +36,13 @@ int main( )
     cout << p1.getName() <<" has : " << p1.showHand() << endl;
     cout << p2.getName() <<" has : " << p2.showHand() << endl;
 
+    while ((p1.getBookSize() + p2.getBookSize()) < 26){
+        turn(p1, p2, d);
+        turn(p2, p2, d);
+
+    }
+
+    cout << "Game over, bitch." << endl;
     
     return EXIT_SUCCESS;  
 }
@@ -48,7 +55,58 @@ void dealHand(Deck &d, Player &p, int numCards)
       p.addCard(d.dealCard());
 }
 
+void turn(Player pA, Player pB, Deck d){
+    if(!pA.handEmpty()){
 
+        //ask the other player for a rank of card
+        Card ask = pA.chooseCardFromHand();
+        cout << pA.getName() << ":" << pB.getName() << ", do you have a" << ask.getRank() << "?" << endl;
+
+
+        Card newCard;
+        //if the other player does have a card of the desired rank: reply, choose newCard
+        if(pB.rankInHand(ask)){
+            cout << pB.getName() << ": I gotchu, bro." << endl;
+            //need a line here which figures out which card to remove (i.e. which card in the hand has the same rank as ask?)
+            newCard = pB.removeCardFromHand(ask);
+
+        //if the other player doesn't have a card of the desired rank: reply, choose newCard
+        }else{
+            cout << pB.getName() << ": Nah, bro, sorry, bro. Go Fish." << endl;
+            newCard = d.dealCard();
+        }
+
+        //add the newCard to the player's hand and check/make books, then return
+        pA.addCard(newCard);
+
+        Card booked1;
+        Card booked2;
+        int book = pA.checkHandForBook(booked1, booked2);
+        if(book){
+            pA.bookCards(booked1, booked2);
+        }
+        cout << pA.getName() << " has booked " << booked1.toString()<< " and " << booked2.toString() << "." << endl;
+        return;
+
+
+    //if the player has no cards in the hand, draw one from the deck
+    }else{
+        Card newCard = d.dealCard();
+        pA.addCard(newCard);
+        cout << pA.getName() << " draws a " << newCard.toString()<< endl;
+
+        //check if that card makes any books
+        Card booked1;
+        Card booked2;
+        int book = pA.checkHandForBook(booked1, booked2);
+        if(book){
+            pA.bookCards(booked1, booked2);
+        }
+        cout << pA.getName() << " has booked " << booked1.toString()<< " and " << booked2.toString() << "." << endl;
+        return;
+    }
+
+}
 
 
 

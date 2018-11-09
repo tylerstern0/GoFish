@@ -52,7 +52,8 @@ class Player
     Card removeCardFromHand(Card c); 
     
     string showHand() const; 
-    string showBooks() const; 
+    string showBooks() const;
+    bool handEmpty() const;
     
     int getHandSize() const; 
     int getBookSize() const; 

@@ -91,6 +91,12 @@ string Card::rankString(int r) const{
 
 }
 
+
+char Card::getSuit() const {
+    return mySuit;
+}
+
+
 // operators
 
 bool Card::operator == (const Card& rhs) const{
@@ -104,5 +110,5 @@ bool Card::operator != (const Card& rhs) const{
 }
 
 ostream& Card::operator << (const Card& c){
-    cout << c.toString();
+    return cout << c.toString();
 }

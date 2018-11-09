@@ -38,11 +38,28 @@ void Player::addCard(Card c){
     }
 }
 
+Card Player::removeCardFromHand(Card c) {
+
+    Card tempCard;
+
+    for(int i = 0; i<myHand.size(); i++)
+    {
+        if(myHand[i] == c){
+            tempCard = myHand[i];
+            myHand.erase(myHand.begin()+i);
+        }
+
+    }
+
+    return(tempCard);
+}
+
 void Player::bookCards(Card c1, Card c2) {
     if(myBook.size()<26){
         myBook.push_back(c1);
         myBook.push_back(c2);
     }
+
     else{
         cout<<"Book is Full";
     }
@@ -53,16 +70,18 @@ bool Player::checkHandForBook(Card &c1, Card &c2) {
 
     for(int i = 0; i<myHand.size(); i++){
         for(int j = 0; j<myHand.size(); j++)
-            while(myHand[i].getRank() != myHand[j].getRank())   //I don't know why you used this while loop here
+            while(myHand[i].getSuit() != myHand[j].getSuit())
             {
                 if(myHand[i] == myHand[j]){
                     c1 = myHand[i];
+                    removeCardFromHand(c1);
                     c2 = myHand[j];
+                    removeCardFromHand(c2);
                     return(true);
                 }
 
 
-            //}
+            }
     }
     return(false);
 }
@@ -83,10 +102,8 @@ bool Player::rankInHand(Card c) const {
 Card Player::chooseCardFromHand() const {
     srand((unsigned)time(0));  //seed the random number generator
 
-    if(myHand.size() > 0) {
         int i = (rand() % myHand.size());
         return (myHand[i]);
-    }
 }
 
 bool Player::cardInHand(Card c) const {
@@ -101,20 +118,6 @@ bool Player::cardInHand(Card c) const {
 
 }
 
-Card Player::removeCardFromHand(Card c) {
-
-
-    for(int i = 0; i<myHand.size(); i++)
-    {
-        if(myHand[i] == c){
-            Card tempCard = myHand[i];
-            myHand.erase(myHand.begin()+i);
-            return(tempCard);
-        }
-
-    }
-
-}
 
 int Player::getBookSize() const {
     return((myBook.size())/2);
@@ -140,4 +143,7 @@ string Player::showBooks() const {
     return(book_content);
 }
 
+bool Player::handEmpty() const {
+    return (myHand.empty());
+}
 
