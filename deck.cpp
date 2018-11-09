@@ -11,7 +11,7 @@
 
 
 Deck::Deck() {
-    Card myCards[SIZE];
+    //Card myCards[SIZE];
 
     for (int r = 0; r < 13; r++) {
         myCards[r] = Card(r, (Card::Suit) 0);
