@@ -89,14 +89,13 @@ Card Deck::dealCard() {
 
     }
     else{
-
         cout<<"No More Cards Left"<<endl;
     }
 
 }
 
 int Deck::size() const{
-    return myIndex;
+    return (myIndex + 1);
 }
 
 
