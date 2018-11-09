@@ -13,6 +13,7 @@
 
 
 #include "card.h"
+#include "deck.h"
 using namespace std;
 
 
@@ -21,13 +22,9 @@ class Player
   public:
     Player();
 
-    Player(string name) {
-       myName = name;
-    }
+    Player(string name);
 
-    string getName() const {
-       return myName;
-    }
+    string getName() const;
     
     void addCard(Card c);  //adds a card to the hand
     void bookCards(Card c1, Card c2);

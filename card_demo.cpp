@@ -43,6 +43,7 @@ void dealHand(Deck &d, Player &p, int numCards)
 }
 
 /*
+
 // FILE: card_demo.cpp
 #include <iostream>    // Provides cout and cin
 #include <cstdlib>     // Provides EXIT_SUCCESS
@@ -79,7 +80,7 @@ int main( )
 
     for (int i = 0; i < numCards; i++) {
         int rank = (rand() % 13) + 1;
-        int suit = (rand() % 4) + 1;
+        int suit = (rand() % 4);
         Card c(rank,(Card::Suit)suit);
         cout << "rank - " << rank << "  "  << c <<  endl;
         cards[i] = c;
@@ -99,9 +100,9 @@ int main( )
 }
 
 
+
+
 */
-
-
 
 
 

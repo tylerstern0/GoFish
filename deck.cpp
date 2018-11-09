@@ -10,35 +10,33 @@
 #include <cstdlib>
 
 
-Deck::Deck(){
+Deck::Deck() {
     Card myCards[SIZE];
-    const std::vector<Card::Suit> suits {Card::Suit::clubs, Card::Suit::diamonds, Card::Suit::hearts, Card::Suit::spades};
     int i = 0;
-    for(const auto & s : suits) {
-        for (int r = 0; r < 14; r++) {
-            myCards[i] = Card(r, s);
-            i++;
-        }
+    for (int r = 0; r < 12; r++) {
+        myCards[r] = Card(r, (Card::Suit) 0);
     }
+    for (int r = 12; r < 25; r++) {
+        myCards[r] = Card(r, (Card::Suit) 1);
+    }
+    for (int r = 25; r < 38; r++) {
+        myCards[r] = Card(r, (Card::Suit) 2);
+    }
+    for (int r = 38; r < 52; r++) {
+        myCards[r] = Card(r, (Card::Suit) 3);
+    }
+
     int myIndex = 51;
-//Vector Implementation??
-
-    std::vector <Card> Cards{};
-    for(const auto & s : suits) {
-        for (int r = 0; r < 14; r++) {
-            Cards.push_back(s,r);
-        }
-    }
+}
 
 
-};
 
 void Deck::shuffle() {
     unsigned int currentTime =  (unsigned)time(0);  //get time
     srand(currentTime);                             //seed w/ time
     Card tempCard;
     int swapIndex = 0;
-    int tempIndex = myIndex;
+    int tempIndex = myIndex; // this effectively hides the cards that are dealt
 
     while(tempIndex >= 0) {
         swapIndex = (rand() % tempIndex);
@@ -84,7 +82,6 @@ void Deck::shuffle() {
 Card Deck::dealCard() {
     Card tempCard;
     tempCard = myCards[myIndex];
-    myCards[myIndex] = NULL;
     myIndex--;
     return tempCard;
     //?? Not sure how to delete - I think we will have to use a pointer, maybe a vector of pointers
@@ -93,7 +90,6 @@ Card Deck::dealCard() {
 
 int Deck::size() const{
     return myIndex;
-
 }
 
 
