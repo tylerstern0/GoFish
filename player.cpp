@@ -123,10 +123,20 @@ int Player::getHandSize() const {
 }
 
 string Player::showHand() const {
-    return("Help");
+    string hand_content;
+    for(int i =0; i<myHand.size(); i++){
+        hand_content = hand_content + myHand[i].toString() + "\n";
+    }
+    cout<< "The player has" << hand_content << endl;
+    return(hand_content);
 }
 string Player::showBooks() const {
-    return("Help");
+    string book_content;
+    for(int i =0; i<myBook.size(); i++){
+        book_content = book_content + myBook[i].toString() + "\n";
+    }
+    cout<< "The player has booked" << book_content << endl;
+    return(book_content);
 }
 
 

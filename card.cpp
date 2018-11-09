@@ -90,7 +90,7 @@ string Card::rankString(int r) const{
     {
         return("Q");
     }
-    else if(r == 13)
+    else
     {
         return("K");
     }

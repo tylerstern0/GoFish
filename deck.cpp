@@ -80,11 +80,18 @@ void Deck::shuffle() {
 }
 
 Card Deck::dealCard() {
-    Card tempCard;
-    tempCard = myCards[myIndex];
-    myIndex--;
-    return tempCard;
-    //?? Not sure how to delete - I think we will have to use a pointer, maybe a vector of pointers
+    if(Deck::size() > 0){
+        Card tempCard;
+        tempCard = myCards[myIndex];
+        myIndex--;
+        return tempCard;
+        //?? Not sure how to delete - I think we will have to use a pointer, maybe a vector of pointers
+
+    }
+    else{
+
+        cout<<"No More Cards Left"<<endl;
+    }
 
 }
 
