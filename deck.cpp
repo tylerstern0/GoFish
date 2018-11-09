@@ -91,8 +91,8 @@ Card Deck::dealCard() {
 
     int temp = myIndex;
     myIndex--;
-    cout << myIndex << endl;
-    cout<<myCards[temp].toString()<<endl;
+    //cout << myIndex << endl;
+    //cout<<myCards[temp].toString()<<endl;
     return myCards[temp];
 
     //if(Deck::size() > 0){

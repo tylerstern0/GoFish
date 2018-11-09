@@ -38,7 +38,11 @@ int main( )
 
     while ((p1.getBookSize() + p2.getBookSize()) < 26){
         turn(p1, p2, d);
-        turn(p2, p2, d);
+        cout << p1.getName() << "'s hand: " << p1.showHand() << endl;
+        cout << p2.getName() << "'s hand: " << p2.showHand() << endl;
+        cout << p1.getName() << "'s books: " << p1.showBooks() << endl;
+        cout << p2.getName() << "'s books: " << p2.showBooks() << endl;
+        turn(p2, p1, d);
 
     }
 
@@ -60,7 +64,7 @@ void turn(Player pA, Player pB, Deck d){
 
         //ask the other player for a rank of card
         Card ask = pA.chooseCardFromHand();
-        cout << pA.getName() << ":" << pB.getName() << ", do you have a" << ask.getRank() << "?" << endl;
+        cout << pA.getName() << ":" << pB.getName() << ", do you have a " << ask.getRank() << "?" << endl;
 
 
         Card newCard;
