@@ -29,7 +29,7 @@ class Deck
     Deck();           // pristine, sorted deck
 
     void shuffle();   // shuffle the cards in the current deck
-    Card dealCard();   // get a card, after 52 are dealt, fail 
+    Card dealCard();   // get a card, after 52 are dealt, fail
 
     int size() const; // # cards left in the deck
 

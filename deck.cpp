@@ -88,43 +88,11 @@ void Deck::shuffle() {
 
 Card Deck::dealCard() {
 
-    Card myCards[SIZE];
-
-    for (int r = 0; r < 13; r++) {
-        myCards[r] = Card(r, (Card::Suit) 0);
-    }
-    for (int r = 0; r < 13; r++) {
-        myCards[r+13] = Card(r, (Card::Suit) 1);
-    }
-    for (int r = 0; r < 13; r++) {
-        myCards[r+25] = Card(r, (Card::Suit) 2);
-    }
-    for (int r = 0; r < 14; r++) {
-        myCards[r+38] = Card(r, (Card::Suit) 3);
-    }
-
-    srand((unsigned)time(0));  //seed the random number generator
-    Card tempCard;
-    int swapIndex = 0;
-    int tempIndex = myIndex; // this effectively hides the cards that are dealt
-
-
-    while(tempIndex > 0) {
-        swapIndex = (rand() % tempIndex);
-
-        tempCard = myCards[swapIndex];
-
-        myCards[swapIndex] = myCards[tempIndex];
-
-        myCards[tempIndex] = tempCard;
-
-        tempIndex--;
-
-
-    }
 
     int temp = myIndex;
     myIndex--;
+    cout << myIndex << endl;
+    cout<<myCards[temp].toString()<<endl;
     return myCards[temp];
 
     //if(Deck::size() > 0){

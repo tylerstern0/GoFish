@@ -24,6 +24,7 @@ int main( )
 
 
     Deck d;  //create a deck of cards
+    d = Deck();
 
     //d.shuffle();
 
