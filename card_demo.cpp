@@ -67,8 +67,8 @@ void turn(Player pA, Player pB, Deck d){
         //if the other player does have a card of the desired rank: reply, choose newCard
         if(pB.rankInHand(ask)){
             cout << pB.getName() << ": I gotchu, bro." << endl;
-            //need a line here which figures out which card to remove (i.e. which card in the hand has the same rank as ask?)
-            newCard = pB.removeCardFromHand(ask);
+            newCard = pB.searchHand(ask);
+            pB.removeCardFromHand(newCard);
 
         //if the other player doesn't have a card of the desired rank: reply, choose newCard
         }else{

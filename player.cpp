@@ -106,6 +106,17 @@ Card Player::chooseCardFromHand() const {
         return (myHand[i]);
 }
 
+Card Player::searchHand(Card c) const {
+    Card newCard;
+
+    for (int i = 0; i < getHandSize(); i++){
+        if(myHand[i].getRank() == c.getRank()){
+            newCard  = myHand[i];
+        }
+    }
+    return newCard;
+}
+
 bool Player::cardInHand(Card c) const {
     for(int i = 0; i<myHand.size(); i++)
     {

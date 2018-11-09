@@ -43,10 +43,13 @@ class Player
     
     //uses some strategy to choose one card from the player's
     //hand so they can say "Do you have a 4?"
-    Card chooseCardFromHand() const; 
+    Card chooseCardFromHand() const;
+
+    //finds the first card in the hand which has the same rank as the one you pass in
+    Card searchHand(Card c) const;
     
     //Does the player have the card c in her hand?
-    bool cardInHand(Card c) const; 
+    bool cardInHand(Card c) const;
     
     //Remove the card c from the hand and return it to the caller
     Card removeCardFromHand(Card c); 
