@@ -6,13 +6,14 @@
 #include "player.h"
 #include "deck.h"
 #include <unistd.h>
+#include <fstream>
 
 using namespace std;
 
 
 // PROTOTYPES for functions used by this demonstration program:
 void dealHand(Deck &d, Player &p, int numCards);
-void turn(Player &pA, Player &pB, Deck &d);
+void turn(Player &pA, Player &pB, Deck &d, ofstream &outFile);
 
 
 
@@ -20,6 +21,10 @@ void turn(Player &pA, Player &pB, Deck &d);
 int main( )
 {
     int numCards = 5;
+
+    ofstream outFile;
+    outFile.open("gofish.txt");
+
 
     Player p1("Tyler");
     Player p2("Aditya");
@@ -34,21 +39,34 @@ int main( )
 
     dealHand(d, p2, numCards);
 
-    cout << p1.getName() <<" has : " << p1.showHand() << endl;
-    cout << p2.getName() <<" has : " << p2.showHand() << endl;
+    outFile << p1.getName() <<" has : " << p1.showHand() << endl;
+    outFile << p2.getName() <<" has : " << p2.showHand() << endl;
 
 
     while ((p1.getBookSize() + p2.getBookSize()) < 25){
-        turn(p1, p2, d);
-        cout << p1.getName() << "'s hand: " << p1.showHand() << endl;
-        cout << p2.getName() << "'s hand: " << p2.showHand() << endl;
-        cout << p1.getName() << "'s books: " << p1.showBooks() << endl;
-        cout << p2.getName() << "'s books: " << p2.showBooks() << endl;
-        turn(p2, p1, d);
+        turn(p1, p2, d, outFile);
+        outFile << p1.getName() << "'s hand: " << p1.showHand() << endl;
+        outFile << p2.getName() << "'s hand: " << p2.showHand() << endl;
+        outFile << p1.getName() << "'s books: " << p1.showBooks() << endl;
+        outFile << p2.getName() << "'s books: " << p2.showBooks() << endl;
+        turn(p2, p1, d, outFile);
+        outFile << p1.getName() << "'s hand: " << p1.showHand() << endl;
+        outFile << p2.getName() << "'s hand: " << p2.showHand() << endl;
+        outFile << p1.getName() << "'s books: " << p1.showBooks() << endl;
+        outFile << p2.getName() << "'s books: " << p2.showBooks() << endl;
 
     }
 
-    cout << "Game over, bitch." << endl;
+    outFile << "Game over." << endl;
+    if(p1.getBookSize() > p2.getBookSize()){
+        outFile << p1.getName() << " wins." << endl;
+    }
+    if(p2.getBookSize() > p1.getBookSize()){
+        outFile << p2.getName() << " wins." << endl;
+    }else{
+        outFile<<"The game ends in a tie."<< endl;
+    }
+    outFile.close();
     
     return EXIT_SUCCESS;  
 }
@@ -61,26 +79,26 @@ void dealHand(Deck &d, Player &p, int numCards)
       p.addCard(d.dealCard());
 }
 
-void turn(Player &pA, Player &pB, Deck &d){
+void turn(Player &pA, Player &pB, Deck &d, ofstream &outFile){
     if(!pA.handEmpty()){
 
         //ask the other player for a rank of card
         Card ask = pA.chooseCardFromHand();
-        cout << pA.getName() << ":" << pB.getName() << ", do you have a " << ask.getRank() << "?" << endl;
+        outFile << pA.getName() << ": " << pB.getName() << ", do you have a " << ask.getRank() << "?" << endl;
 
 
         Card newCard;
         //if the other player does have a card of the desired rank: reply, choose newCard
         if(pB.rankInHand(ask)){
-            cout << pB.getName() << ": I gotchu, bro." << endl;
+            outFile << pB.getName() << ": I gotchu, bro." << endl;
             newCard = pB.searchHand(ask);
             pB.removeCardFromHand(newCard);
 
         //if the other player doesn't have a card of the desired rank: reply, choose newCard
         }else{
-            cout << pB.getName() << ": Nah, bro, sorry, bro. Go Fish." << endl;
+            outFile << pB.getName() << ": Nah, bro, sorry, bro. Go Fish." << endl;
             newCard = d.dealCard();
-            cout<<newCard.toString()<<endl;
+            outFile<< pA.getName()<<" draws "<< newCard.toString()<<"."<< endl;
         }
 
         //add the newCard to the player's hand and check/make books, then return
@@ -107,7 +125,7 @@ void turn(Player &pA, Player &pB, Deck &d){
     }else{
         Card newCard = d.dealCard();
         pA.addCard(newCard);
-        cout << pA.getName() << " draws a " << newCard.toString()<< endl;
+        outFile << pA.getName() << " draws a " << newCard.toString()<< endl;
 
         //check if that card makes any books
         Card booked1;

@@ -1,0 +1,349 @@
+Tyler has : 3d  Ks  Jc  Ad  Js  
+Aditya has : Ah  Qc  8h  7s  6h  
+Tyler: Aditya, do you have a 1?
+Aditya: I gotchu, bro.
+Tyler's hand: 3d  Ks  Ad  Ah  
+Aditya's hand: Qc  8h  7s  6h  
+Tyler's books: Jc  Js  
+Aditya's books: 
+Aditya: Tyler, do you have a 6?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws Qh.
+Tyler's hand: 3d  Ks  Ad  Ah  
+Aditya's hand: 8h  7s  6h  
+Tyler's books: Jc  Js  
+Aditya's books: Qc  Qh  
+Tyler: Aditya, do you have a 1?
+Aditya: Nah, bro, sorry, bro. Go Fish.
+Tyler draws 7c.
+Tyler's hand: 3d  Ks  7c  
+Aditya's hand: 8h  7s  6h  
+Tyler's books: Jc  Js  Ad  Ah  
+Aditya's books: Qc  Qh  
+Aditya: Tyler, do you have a 8?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws 4d.
+Tyler's hand: 3d  Ks  7c  
+Aditya's hand: 8h  7s  6h  4d  
+Tyler's books: Jc  Js  Ad  Ah  
+Aditya's books: Qc  Qh  
+Tyler: Aditya, do you have a 3?
+Aditya: Nah, bro, sorry, bro. Go Fish.
+Tyler draws Kd.
+Tyler's hand: 3d  7c  
+Aditya's hand: 8h  7s  6h  4d  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  
+Aditya's books: Qc  Qh  
+Aditya: Tyler, do you have a 4?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws 4h.
+Tyler's hand: 3d  7c  
+Aditya's hand: 8h  7s  6h  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  
+Aditya's books: Qc  Qh  4d  4h  
+Tyler: Aditya, do you have a 7?
+Aditya: I gotchu, bro.
+Tyler's hand: 3d  
+Aditya's hand: 8h  6h  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  
+Aditya's books: Qc  Qh  4d  4h  
+Aditya: Tyler, do you have a 6?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws Jh.
+Tyler's hand: 3d  
+Aditya's hand: 8h  6h  Jh  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  
+Aditya's books: Qc  Qh  4d  4h  
+Tyler: Aditya, do you have a 3?
+Aditya: Nah, bro, sorry, bro. Go Fish.
+Tyler draws 2d.
+Tyler's hand: 3d  2d  
+Aditya's hand: 8h  6h  Jh  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  
+Aditya's books: Qc  Qh  4d  4h  
+Aditya: Tyler, do you have a 8?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws 6s.
+Tyler's hand: 3d  2d  
+Aditya's hand: 8h  Jh  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  
+Tyler: Aditya, do you have a 2?
+Aditya: Nah, bro, sorry, bro. Go Fish.
+Tyler draws 3h.
+Tyler's hand: 2d  
+Aditya's hand: 8h  Jh  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  
+Aditya: Tyler, do you have a 11?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws 10c.
+Tyler's hand: 2d  
+Aditya's hand: 8h  Jh  10c  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  
+Tyler: Aditya, do you have a 2?
+Aditya: Nah, bro, sorry, bro. Go Fish.
+Tyler draws 2s.
+Tyler's hand: 
+Aditya's hand: 8h  Jh  10c  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  
+Aditya: Tyler, do you have a 8?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws 9s.
+Tyler's hand: 
+Aditya's hand: 8h  Jh  10c  9s  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  
+Tyler draws a 8d
+Tyler's hand: 8d  
+Aditya's hand: 8h  Jh  10c  9s  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  
+Aditya: Tyler, do you have a 9?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws 5d.
+Tyler's hand: 8d  
+Aditya's hand: 8h  Jh  10c  9s  5d  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  
+Tyler: Aditya, do you have a 8?
+Aditya: I gotchu, bro.
+Tyler's hand: 
+Aditya's hand: Jh  10c  9s  5d  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  
+Aditya: Tyler, do you have a 5?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws 10d.
+Tyler's hand: 
+Aditya's hand: Jh  9s  5d  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  
+Tyler draws a 5c
+Tyler's hand: 5c  
+Aditya's hand: Jh  9s  5d  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  
+Aditya: Tyler, do you have a 11?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws 10s.
+Tyler's hand: 5c  
+Aditya's hand: Jh  9s  5d  10s  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  
+Tyler: Aditya, do you have a 5?
+Aditya: I gotchu, bro.
+Tyler's hand: 
+Aditya's hand: Jh  9s  10s  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  
+Aditya: Tyler, do you have a 11?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws 4s.
+Tyler's hand: 
+Aditya's hand: Jh  9s  10s  4s  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  
+Tyler draws a Ac
+Tyler's hand: Ac  
+Aditya's hand: Jh  9s  10s  4s  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  
+Aditya: Tyler, do you have a 4?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws As.
+Tyler's hand: Ac  
+Aditya's hand: Jh  9s  10s  4s  As  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  
+Tyler: Aditya, do you have a 1?
+Aditya: I gotchu, bro.
+Tyler's hand: 
+Aditya's hand: Jh  9s  10s  4s  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  
+Aditya: Tyler, do you have a 4?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws 3s.
+Tyler's hand: 
+Aditya's hand: Jh  9s  10s  4s  3s  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  
+Tyler draws a Qs
+Tyler's hand: Qs  
+Aditya's hand: Jh  9s  10s  4s  3s  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  
+Aditya: Tyler, do you have a 4?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws 5s.
+Tyler's hand: Qs  
+Aditya's hand: Jh  9s  10s  4s  3s  5s  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  
+Tyler: Aditya, do you have a 12?
+Aditya: Nah, bro, sorry, bro. Go Fish.
+Tyler draws 8s.
+Tyler's hand: Qs  8s  
+Aditya's hand: Jh  9s  10s  4s  3s  5s  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  
+Aditya: Tyler, do you have a 4?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws 6c.
+Tyler's hand: Qs  8s  
+Aditya's hand: Jh  9s  10s  4s  3s  5s  6c  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  
+Tyler: Aditya, do you have a 8?
+Aditya: Nah, bro, sorry, bro. Go Fish.
+Tyler draws 10h.
+Tyler's hand: Qs  8s  10h  
+Aditya's hand: Jh  9s  10s  4s  3s  5s  6c  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  
+Aditya: Tyler, do you have a 6?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws 9c.
+Tyler's hand: Qs  8s  10h  
+Aditya's hand: Jh  10s  4s  3s  5s  6c  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  9s  9c  
+Tyler: Aditya, do you have a 12?
+Aditya: Nah, bro, sorry, bro. Go Fish.
+Tyler draws 3c.
+Tyler's hand: Qs  8s  10h  3c  
+Aditya's hand: Jh  10s  4s  3s  5s  6c  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  9s  9c  
+Aditya: Tyler, do you have a 3?
+Tyler: I gotchu, bro.
+Tyler's hand: Qs  8s  10h  
+Aditya's hand: Jh  10s  4s  5s  6c  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  9s  9c  3s  3c  
+Tyler: Aditya, do you have a 12?
+Aditya: Nah, bro, sorry, bro. Go Fish.
+Tyler draws 2h.
+Tyler's hand: Qs  8s  10h  2h  
+Aditya's hand: Jh  10s  4s  5s  6c  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  9s  9c  3s  3c  
+Aditya: Tyler, do you have a 5?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws 2c.
+Tyler's hand: Qs  8s  10h  2h  
+Aditya's hand: Jh  10s  4s  5s  6c  2c  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  9s  9c  3s  3c  
+Tyler: Aditya, do you have a 2?
+Aditya: I gotchu, bro.
+Tyler's hand: Qs  8s  10h  
+Aditya's hand: Jh  10s  4s  5s  6c  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  2h  2c  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  9s  9c  3s  3c  
+Aditya: Tyler, do you have a 5?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws 8c.
+Tyler's hand: Qs  8s  10h  
+Aditya's hand: Jh  10s  4s  5s  6c  8c  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  2h  2c  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  9s  9c  3s  3c  
+Tyler: Aditya, do you have a 12?
+Aditya: Nah, bro, sorry, bro. Go Fish.
+Tyler draws Qd.
+Tyler's hand: 8s  10h  
+Aditya's hand: Jh  10s  4s  5s  6c  8c  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  2h  2c  Qs  Qd  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  9s  9c  3s  3c  
+Aditya: Tyler, do you have a 5?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws Kc.
+Tyler's hand: 8s  10h  
+Aditya's hand: Jh  10s  4s  5s  6c  8c  Kc  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  2h  2c  Qs  Qd  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  9s  9c  3s  3c  
+Tyler: Aditya, do you have a 10?
+Aditya: I gotchu, bro.
+Tyler's hand: 8s  
+Aditya's hand: Jh  4s  5s  6c  8c  Kc  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  2h  2c  Qs  Qd  10h  10s  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  9s  9c  3s  3c  
+Aditya: Tyler, do you have a 6?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws 9h.
+Tyler's hand: 8s  
+Aditya's hand: Jh  4s  5s  6c  8c  Kc  9h  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  2h  2c  Qs  Qd  10h  10s  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  9s  9c  3s  3c  
+Tyler: Aditya, do you have a 8?
+Aditya: I gotchu, bro.
+Tyler's hand: 
+Aditya's hand: Jh  4s  5s  6c  Kc  9h  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  2h  2c  Qs  Qd  10h  10s  8s  8c  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  9s  9c  3s  3c  
+Aditya: Tyler, do you have a 6?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws 9d.
+Tyler's hand: 
+Aditya's hand: Jh  4s  5s  6c  Kc  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  2h  2c  Qs  Qd  10h  10s  8s  8c  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  9s  9c  3s  3c  9h  9d  
+Tyler draws a 7d
+Tyler's hand: 7d  
+Aditya's hand: Jh  4s  5s  6c  Kc  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  2h  2c  Qs  Qd  10h  10s  8s  8c  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  9s  9c  3s  3c  9h  9d  
+Aditya: Tyler, do you have a 6?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws As.
+Tyler's hand: 7d  
+Aditya's hand: Jh  4s  5s  6c  Kc  As  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  2h  2c  Qs  Qd  10h  10s  8s  8c  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  9s  9c  3s  3c  9h  9d  
+Tyler: Aditya, do you have a 7?
+Aditya: Nah, bro, sorry, bro. Go Fish.
+Tyler draws Jd.
+Tyler's hand: 7d  Jd  
+Aditya's hand: Jh  4s  5s  6c  Kc  As  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  2h  2c  Qs  Qd  10h  10s  8s  8c  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  9s  9c  3s  3c  9h  9d  
+Aditya: Tyler, do you have a 6?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws 5h.
+Tyler's hand: 7d  Jd  
+Aditya's hand: Jh  4s  6c  Kc  As  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  2h  2c  Qs  Qd  10h  10s  8s  8c  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  9s  9c  3s  3c  9h  9d  5s  5h  
+Tyler: Aditya, do you have a 11?
+Aditya: I gotchu, bro.
+Tyler's hand: 7d  
+Aditya's hand: 4s  6c  Kc  As  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  2h  2c  Qs  Qd  10h  10s  8s  8c  Jd  Jh  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  9s  9c  3s  3c  9h  9d  5s  5h  
+Aditya: Tyler, do you have a 1?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws 4c.
+Tyler's hand: 7d  
+Aditya's hand: 6c  Kc  As  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  2h  2c  Qs  Qd  10h  10s  8s  8c  Jd  Jh  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  9s  9c  3s  3c  9h  9d  5s  5h  4s  4c  
+Tyler: Aditya, do you have a 7?
+Aditya: Nah, bro, sorry, bro. Go Fish.
+Tyler draws 7h.
+Tyler's hand: 
+Aditya's hand: 6c  Kc  As  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  2h  2c  Qs  Qd  10h  10s  8s  8c  Jd  Jh  7d  7h  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  9s  9c  3s  3c  9h  9d  5s  5h  4s  4c  
+Aditya: Tyler, do you have a 6?
+Tyler: Nah, bro, sorry, bro. Go Fish.
+Aditya draws 6d.
+Tyler's hand: 
+Aditya's hand: Kc  As  
+Tyler's books: Jc  Js  Ad  Ah  Ks  Kd  7c  7s  3d  3h  2d  2s  8d  8h  5c  5d  Ac  As  2h  2c  Qs  Qd  10h  10s  8s  8c  Jd  Jh  7d  7h  
+Aditya's books: Qc  Qh  4d  4h  6h  6s  10c  10d  9s  9c  3s  3c  9h  9d  5s  5h  4s  4c  6c  6d  
+Game over.
+Tyler wins.
+The game ends in a tie.
